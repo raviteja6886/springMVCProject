@@ -1,0 +1,796 @@
+2024-06-26 10:28:18,267[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 15444 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 10:28:18,278[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 10:28:18,419[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024-06-26 10:28:18,420[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024-06-26 10:28:19,985[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 10:28:20,102[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 99 ms. Found 2 JPA repository interfaces. 
+2024-06-26 10:28:21,338[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 10:28:21,355[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 10:28:21,356[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 10:28:21,490[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 10:28:21,491[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 3069 ms 
+2024-06-26 10:28:21,911[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 10:28:22,031[dd-mm-yyyy] [INFO] org.hibernate.Version HHH000412: Hibernate ORM core version 6.2.13.Final 
+2024-06-26 10:28:22,037[dd-mm-yyyy] [INFO] org.hibernate.cfg.Environment HHH000406: Using bytecode reflection optimizer 
+2024-06-26 10:28:22,783[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 10:28:22,837[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2024-06-26 10:28:23,181[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1689b3a3 
+2024-06-26 10:28:23,185[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2024-06-26 10:28:23,280[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 10:28:24,953[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 10:28:25,059[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 10:28:25,606[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 10:28:26,585[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b88f41e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c90fec5, org.springframework.security.web.context.SecurityContextHolderFilter@1aed8f71, org.springframework.security.web.header.HeaderWriterFilter@1669289f, org.springframework.security.web.authentication.logout.LogoutFilter@fadbce6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a6fb802, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4577b744, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3444df84, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f34a2c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f2051b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@411972e3, org.springframework.security.web.access.ExceptionTranslationFilter@41713d8d, org.springframework.security.web.access.intercept.AuthorizationFilter@593f84a0] 
+2024-06-26 10:28:26,981[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 10:28:27,050[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 10:28:27,072[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 9.847 seconds (process running for 11.533) 
+2024-06-26 10:29:13,543[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-06-26 10:29:13,543[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2024-06-26 10:29:13,547[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 3 ms 
+2024-06-26 10:29:27,778[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 10:29:37,696[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 10:29:37,737[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 10:29:44,164[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 where b1_0.id=? 
+2024-06-26 10:29:44,213[dd-mm-yyyy] [DEBUG] org.hibernate.SQL delete from book where id=? 
+2024-06-26 10:29:44,213[dd-mm-yyyy] [WARN] com.bookstore.controllers.BookController  book is deleted successfully 
+2024-06-26 10:29:44,246[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 10:29:44,246[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 10:30:06,477[dd-mm-yyyy] [DEBUG] org.hibernate.SQL insert into book (author_name,book_name,price) values (?,?,?) 
+2024-06-26 10:30:06,510[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 10:30:06,510[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 10:42:52,571[dd-mm-yyyy] [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested. 
+2024-06-26 10:42:52,602[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 10:42:52,609[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2024-06-26 10:42:52,660[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 10:42:52,668[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2024-06-26 10:42:52,685[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2024-06-26 11:16:39,583[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 18392 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 11:16:39,588[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 11:16:39,817[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024-06-26 11:16:39,817[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024-06-26 11:16:40,933[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 11:16:41,039[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces. 
+2024-06-26 11:16:42,019[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 11:16:42,033[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 11:16:42,034[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 11:16:42,256[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 11:16:42,257[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2438 ms 
+2024-06-26 11:16:42,535[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 11:16:42,619[dd-mm-yyyy] [INFO] org.hibernate.Version HHH000412: Hibernate ORM core version 6.2.13.Final 
+2024-06-26 11:16:42,623[dd-mm-yyyy] [INFO] org.hibernate.cfg.Environment HHH000406: Using bytecode reflection optimizer 
+2024-06-26 11:16:43,054[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 11:16:43,097[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2024-06-26 11:16:43,345[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53c50939 
+2024-06-26 11:16:43,350[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2024-06-26 11:16:43,437[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 11:16:44,780[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 11:16:44,853[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 11:16:45,337[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 11:16:46,265[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1034238, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2480b81e, org.springframework.security.web.context.SecurityContextHolderFilter@307ff960, org.springframework.security.web.header.HeaderWriterFilter@24b51d46, org.springframework.security.web.authentication.logout.LogoutFilter@481f5aa2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@25400cda, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@43b98e4d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3c9a4c4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c68336f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1eb2883, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6862d37d, org.springframework.security.web.access.ExceptionTranslationFilter@6c3be803, org.springframework.security.web.access.intercept.AuthorizationFilter@572c42c7] 
+2024-06-26 11:16:46,624[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 11:16:46,687[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 11:16:46,708[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 7.84 seconds (process running for 9.457) 
+2024-06-26 11:17:00,565[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-06-26 11:17:00,565[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2024-06-26 11:17:00,581[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms 
+2024-06-26 11:17:11,255[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 11:17:35,666[dd-mm-yyyy] [DEBUG] org.hibernate.SQL insert into book (author_name,book_name,price) values (?,?,?) 
+2024-06-26 11:17:35,938[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 11:17:35,946[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 11:17:54,731[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 11:17:54,737[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 11:18:36,710[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 where b1_0.id=? 
+2024-06-26 11:18:36,726[dd-mm-yyyy] [DEBUG] org.hibernate.SQL delete from book where id=? 
+2024-06-26 11:18:36,741[dd-mm-yyyy] [WARN] com.bookstore.controllers.BookController  book is deleted successfully 
+2024-06-26 11:18:36,758[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 11:18:36,758[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 11:18:39,858[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 where b1_0.id=? 
+2024-06-26 11:18:39,858[dd-mm-yyyy] [DEBUG] org.hibernate.SQL delete from book where id=? 
+2024-06-26 11:18:39,877[dd-mm-yyyy] [WARN] com.bookstore.controllers.BookController  book is deleted successfully 
+2024-06-26 11:18:39,891[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 11:18:39,891[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 11:18:42,877[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 where b1_0.id=? 
+2024-06-26 11:18:42,881[dd-mm-yyyy] [DEBUG] org.hibernate.SQL delete from book where id=? 
+2024-06-26 11:18:42,885[dd-mm-yyyy] [WARN] com.bookstore.controllers.BookController  book is deleted successfully 
+2024-06-26 11:18:42,891[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 11:18:42,891[dd-mm-yyyy] [ERROR] com.bookstore.controllers.BookController No books are available.......com.bookstore.exception.BookNotFoundException: No books are available....... 
+2024-06-26 11:18:55,864[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 
+2024-06-26 11:18:55,872[dd-mm-yyyy] [INFO] com.bookstore.controllers.MyBooksController  My favourite Books are retrieved from database successfully 
+2024-06-26 11:19:11,960[dd-mm-yyyy] [DEBUG] org.hibernate.SQL insert into book (author_name,book_name,price) values (?,?,?) 
+2024-06-26 11:19:11,971[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 11:19:11,986[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 11:21:33,802[dd-mm-yyyy] [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested. 
+2024-06-26 11:21:33,826[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 11:21:33,828[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2024-06-26 11:21:33,844[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 11:21:33,851[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2024-06-26 11:21:33,863[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2024-06-26 11:51:30,543[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 10368 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 11:51:30,548[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 11:51:30,635[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024-06-26 11:51:30,636[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024-06-26 11:51:31,808[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 11:51:31,917[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces. 
+2024-06-26 11:51:32,953[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 11:51:32,968[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 11:51:32,969[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 11:51:33,093[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 11:51:33,093[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2456 ms 
+2024-06-26 11:51:33,390[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 11:51:33,478[dd-mm-yyyy] [INFO] org.hibernate.Version HHH000412: Hibernate ORM core version 6.2.13.Final 
+2024-06-26 11:51:33,483[dd-mm-yyyy] [INFO] org.hibernate.cfg.Environment HHH000406: Using bytecode reflection optimizer 
+2024-06-26 11:51:34,103[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 11:51:34,157[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2024-06-26 11:51:34,421[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b261d27 
+2024-06-26 11:51:34,426[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2024-06-26 11:51:34,524[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 11:51:35,914[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 11:51:36,001[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 11:51:36,612[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 11:51:37,471[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ed6d496, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76a7f87d, org.springframework.security.web.context.SecurityContextHolderFilter@74975c3d, org.springframework.security.web.header.HeaderWriterFilter@5feb9910, org.springframework.security.web.authentication.logout.LogoutFilter@6c376953, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38ec08b1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1904d80e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4e07145b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@111b2ca1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@238d0179, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b4d3aef, org.springframework.security.web.access.ExceptionTranslationFilter@3a38a573, org.springframework.security.web.access.intercept.AuthorizationFilter@5761286f] 
+2024-06-26 11:51:37,837[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 11:51:37,901[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 11:51:37,921[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 8.13 seconds (process running for 9.559) 
+2024-06-26 11:51:48,917[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-26 11:51:48,940[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 11:51:48,958[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 11:51:48,963[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2024-06-26 11:51:48,977[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2024-06-26 11:51:49,095[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 10368 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 11:51:49,097[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 11:51:49,348[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 11:51:49,366[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces. 
+2024-06-26 11:51:49,509[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 11:51:49,510[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 11:51:49,511[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 11:51:49,545[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 11:51:49,545[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 442 ms 
+2024-06-26 11:51:49,606[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 11:51:49,623[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 11:51:49,624[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Starting... 
+2024-06-26 11:51:49,633[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61a950bb 
+2024-06-26 11:51:49,634[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Start completed. 
+2024-06-26 11:51:49,637[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 11:51:49,692[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 11:51:49,705[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 11:51:49,849[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 11:51:50,316[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5512ac22, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37eb4e98, org.springframework.security.web.context.SecurityContextHolderFilter@60c21bcd, org.springframework.security.web.header.HeaderWriterFilter@69dda6cc, org.springframework.security.web.authentication.logout.LogoutFilter@ab5f5ec, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@702d2d5e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6f6f73f8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@63b96a99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37445ce3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b804382, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ae7ec6d, org.springframework.security.web.access.ExceptionTranslationFilter@7e144188, org.springframework.security.web.access.intercept.AuthorizationFilter@77a46458] 
+2024-06-26 11:51:50,405[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 11:51:50,436[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 11:51:50,446[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 1.385 seconds (process running for 22.084) 
+2024-06-26 11:51:50,450[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged 
+2024-06-26 11:51:59,362[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-06-26 11:51:59,363[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2024-06-26 11:51:59,365[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms 
+2024-06-26 11:52:08,919[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 11:52:16,911[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 11:52:17,040[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 11:53:39,485[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 11:53:39,485[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 11:53:46,391[dd-mm-yyyy] [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested. 
+2024-06-26 11:53:46,407[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 11:53:46,407[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2024-06-26 11:53:46,422[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 11:53:46,422[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown initiated... 
+2024-06-26 11:53:46,422[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown completed. 
+2024-06-26 11:55:48,692[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 7236 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 11:55:48,696[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 11:55:48,794[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024-06-26 11:55:48,795[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024-06-26 11:55:49,805[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 11:55:49,904[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces. 
+2024-06-26 11:55:50,848[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 11:55:50,867[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 11:55:50,868[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 11:55:50,984[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 11:55:50,985[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2188 ms 
+2024-06-26 11:55:51,257[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 11:55:51,342[dd-mm-yyyy] [INFO] org.hibernate.Version HHH000412: Hibernate ORM core version 6.2.13.Final 
+2024-06-26 11:55:51,347[dd-mm-yyyy] [INFO] org.hibernate.cfg.Environment HHH000406: Using bytecode reflection optimizer 
+2024-06-26 11:55:51,779[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 11:55:51,820[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2024-06-26 11:55:52,072[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ceddf82 
+2024-06-26 11:55:52,076[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2024-06-26 11:55:52,270[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 11:55:53,611[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 11:55:53,683[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 11:55:54,158[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 11:55:55,131[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6ad933ba, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ee50a44, org.springframework.security.web.context.SecurityContextHolderFilter@656d4838, org.springframework.security.web.header.HeaderWriterFilter@5b2c0f6c, org.springframework.security.web.authentication.logout.LogoutFilter@2b0b0763, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@256a3459, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2b64c78d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@11241ce2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fc7a228, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@481f5aa2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@527e9a5d, org.springframework.security.web.access.ExceptionTranslationFilter@5d2ff7dc, org.springframework.security.web.access.intercept.AuthorizationFilter@3e1343f9] 
+2024-06-26 11:55:55,443[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 11:55:55,502[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 11:55:55,523[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 7.824 seconds (process running for 9.391) 
+2024-06-26 11:56:03,705[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-06-26 11:56:03,705[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2024-06-26 11:56:03,709[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 4 ms 
+2024-06-26 11:56:03,983[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 11:56:04,009[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 11:56:18,273[dd-mm-yyyy] [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported] 
+2024-06-26 11:56:38,620[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 11:56:38,624[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 11:56:39,966[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 11:56:39,970[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 11:56:44,967[dd-mm-yyyy] [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported] 
+2024-06-26 12:01:02,017[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-26 12:01:02,069[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 12:01:02,071[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2024-06-26 12:01:02,088[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:01:02,095[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2024-06-26 12:01:02,109[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2024-06-26 12:01:02,241[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 7236 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 12:01:02,242[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 12:01:02,576[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 12:01:02,594[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces. 
+2024-06-26 12:01:02,770[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 12:01:02,771[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 12:01:02,772[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 12:01:02,805[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 12:01:02,806[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 554 ms 
+2024-06-26 12:01:02,877[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 12:01:02,888[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 12:01:02,889[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Starting... 
+2024-06-26 12:01:02,898[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@648b848e 
+2024-06-26 12:01:02,899[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Start completed. 
+2024-06-26 12:01:02,903[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 12:01:02,971[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 12:01:02,985[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:01:03,230[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 12:01:03,777[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51e43fcc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6daeaf4c, org.springframework.security.web.context.SecurityContextHolderFilter@55265858, org.springframework.security.web.header.HeaderWriterFilter@5b47c862, org.springframework.security.web.authentication.logout.LogoutFilter@6a20932, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47194584, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1038c8cd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4114e97b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56a4e996, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75590adc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cacb1b8, org.springframework.security.web.access.ExceptionTranslationFilter@3ca3efb9, org.springframework.security.web.access.intercept.AuthorizationFilter@6db835cf] 
+2024-06-26 12:01:03,869[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 12:01:03,889[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 12:01:03,897[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 1.705 seconds (process running for 317.765) 
+2024-06-26 12:01:03,902[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged 
+2024-06-26 12:01:19,881[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-26 12:01:19,901[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 12:01:19,909[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:01:19,910[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown initiated... 
+2024-06-26 12:01:19,918[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown completed. 
+2024-06-26 12:01:20,033[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 7236 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 12:01:20,034[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 12:01:20,252[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 12:01:20,270[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces. 
+2024-06-26 12:01:20,400[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 12:01:20,401[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 12:01:20,401[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 12:01:20,431[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 12:01:20,431[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 394 ms 
+2024-06-26 12:01:20,484[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 12:01:20,492[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 12:01:20,494[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Starting... 
+2024-06-26 12:01:20,502[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@383607e9 
+2024-06-26 12:01:20,502[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Start completed. 
+2024-06-26 12:01:20,505[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 12:01:20,566[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 12:01:20,579[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:01:20,715[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 12:01:21,149[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c979427, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ee8c035, org.springframework.security.web.context.SecurityContextHolderFilter@2b6f9bd, org.springframework.security.web.header.HeaderWriterFilter@520552c9, org.springframework.security.web.authentication.logout.LogoutFilter@4b0db361, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7a27a6b9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@71944937, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7e61df3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a68b61d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9ffd1db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39b4ac27, org.springframework.security.web.access.ExceptionTranslationFilter@6ec5a221, org.springframework.security.web.access.intercept.AuthorizationFilter@6f05e995] 
+2024-06-26 12:01:21,217[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 12:01:21,235[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 12:01:21,243[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 1.241 seconds (process running for 335.111) 
+2024-06-26 12:01:21,245[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged 
+2024-06-26 12:01:23,810[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-26 12:01:23,828[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 12:01:23,835[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:01:23,837[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Shutdown initiated... 
+2024-06-26 12:01:23,843[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Shutdown completed. 
+2024-06-26 12:01:23,948[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 7236 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 12:01:23,949[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 12:01:24,153[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 12:01:24,169[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces. 
+2024-06-26 12:01:24,297[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 12:01:24,297[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 12:01:24,298[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 12:01:24,325[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 12:01:24,325[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 372 ms 
+2024-06-26 12:01:24,381[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 12:01:24,390[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 12:01:24,392[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Starting... 
+2024-06-26 12:01:24,400[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6dd26052 
+2024-06-26 12:01:24,400[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Start completed. 
+2024-06-26 12:01:24,402[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 12:01:24,457[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 12:01:24,470[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:01:24,587[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 12:01:25,102[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@682ff51d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f79a776, org.springframework.security.web.context.SecurityContextHolderFilter@37edfb18, org.springframework.security.web.header.HeaderWriterFilter@17943935, org.springframework.security.web.authentication.logout.LogoutFilter@25cddb0c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@23714fc4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7fb42542, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@33fccc45, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@723e150d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49dff0dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1adaba91, org.springframework.security.web.access.ExceptionTranslationFilter@75791b6, org.springframework.security.web.access.intercept.AuthorizationFilter@4d623773] 
+2024-06-26 12:01:25,169[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 12:01:25,186[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 12:01:25,194[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 1.285 seconds (process running for 339.062) 
+2024-06-26 12:01:25,198[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged 
+2024-06-26 12:01:32,826[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-06-26 12:01:32,826[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2024-06-26 12:01:32,834[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 8 ms 
+2024-06-26 12:01:32,850[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:01:32,855[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:01:34,832[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:01:34,848[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:01:47,347[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 where b1_0.id=? 
+2024-06-26 12:01:47,347[dd-mm-yyyy] [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause 
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.bookstore.services.BookServiceImpl.deleteBook(BookServiceImpl.java:53) ~[classes/:na]
+	at com.bookstore.controllers.BookController.deleteBook(BookController.java:99) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.15.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.15.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:188) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:174) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+2024-06-26 12:02:40,795[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:02:40,806[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:02:42,473[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:02:42,489[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:02:46,783[dd-mm-yyyy] [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported] 
+2024-06-26 12:02:51,872[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:02:51,878[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:02:57,004[dd-mm-yyyy] [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested. 
+2024-06-26 12:02:57,019[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 12:02:57,019[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2024-06-26 12:02:57,035[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:02:57,035[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Shutdown initiated... 
+2024-06-26 12:02:57,035[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Shutdown completed. 
+2024-06-26 12:05:06,697[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 10820 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 12:05:06,702[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 12:05:06,791[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024-06-26 12:05:06,792[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024-06-26 12:05:07,837[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 12:05:07,934[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces. 
+2024-06-26 12:05:08,973[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 12:05:08,987[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 12:05:08,987[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 12:05:09,104[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 12:05:09,105[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2312 ms 
+2024-06-26 12:05:09,394[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 12:05:09,476[dd-mm-yyyy] [INFO] org.hibernate.Version HHH000412: Hibernate ORM core version 6.2.13.Final 
+2024-06-26 12:05:09,480[dd-mm-yyyy] [INFO] org.hibernate.cfg.Environment HHH000406: Using bytecode reflection optimizer 
+2024-06-26 12:05:09,911[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 12:05:09,987[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2024-06-26 12:05:10,242[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5302c084 
+2024-06-26 12:05:10,247[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2024-06-26 12:05:10,329[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 12:05:11,609[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 12:05:11,680[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:05:12,146[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 12:05:13,038[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@348c1414, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1034238, org.springframework.security.web.context.SecurityContextHolderFilter@5d015399, org.springframework.security.web.header.HeaderWriterFilter@4a44eaeb, org.springframework.security.web.authentication.logout.LogoutFilter@3abb693f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@572c42c7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3c393df9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2480b81e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c2c8d04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cc59b3f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c9a4c4e, org.springframework.security.web.access.ExceptionTranslationFilter@5ba23299, org.springframework.security.web.access.intercept.AuthorizationFilter@5af9beba] 
+2024-06-26 12:05:13,378[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 12:05:13,450[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 12:05:13,467[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 7.493 seconds (process running for 8.942) 
+2024-06-26 12:05:23,084[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-06-26 12:05:23,084[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2024-06-26 12:05:23,084[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms 
+2024-06-26 12:05:23,151[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 12:05:57,846[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 12:06:00,846[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:06:00,880[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:06:04,249[dd-mm-yyyy] [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported] 
+2024-06-26 12:06:09,033[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:06:09,040[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:06:20,544[dd-mm-yyyy] [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested. 
+2024-06-26 12:06:20,566[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 12:06:20,568[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2024-06-26 12:06:20,586[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:06:20,593[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2024-06-26 12:06:20,612[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2024-06-26 12:10:49,130[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplicationTests Starting BookStoreApplicationTests using Java 17.0.10 with PID 17352 (started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 12:10:49,132[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplicationTests No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 12:10:50,966[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 12:10:51,122[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 139 ms. Found 2 JPA repository interfaces. 
+2024-06-26 12:10:52,457[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 12:10:52,597[dd-mm-yyyy] [INFO] org.hibernate.Version HHH000412: Hibernate ORM core version 6.2.13.Final 
+2024-06-26 12:10:52,604[dd-mm-yyyy] [INFO] org.hibernate.cfg.Environment HHH000406: Using bytecode reflection optimizer 
+2024-06-26 12:10:53,390[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 12:10:53,451[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2024-06-26 12:10:53,976[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e4d0a0b 
+2024-06-26 12:10:53,981[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2024-06-26 12:10:54,133[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 12:10:56,153[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 12:10:56,248[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:10:57,038[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 12:10:57,925[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@33622388, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e03bb74, org.springframework.security.web.context.SecurityContextHolderFilter@5ab06829, org.springframework.security.web.header.HeaderWriterFilter@6cfac0bd, org.springframework.security.web.authentication.logout.LogoutFilter@173b24c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@9a74a93, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7891742e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6e664075, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b0d480c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1aea759d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c571162, org.springframework.security.web.access.ExceptionTranslationFilter@1248f83, org.springframework.security.web.access.intercept.AuthorizationFilter@65b1693c] 
+2024-06-26 12:10:59,170[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplicationTests Started BookStoreApplicationTests in 10.845 seconds (process running for 13.735) 
+2024-06-26 12:11:01,080[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:11:01,087[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2024-06-26 12:11:01,141[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2024-06-26 12:14:28,800[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 6284 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 12:14:28,804[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 12:14:28,893[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024-06-26 12:14:28,894[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024-06-26 12:14:30,024[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 12:14:30,137[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces. 
+2024-06-26 12:14:31,069[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 12:14:31,084[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 12:14:31,085[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 12:14:31,224[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 12:14:31,224[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2329 ms 
+2024-06-26 12:14:31,504[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 12:14:31,605[dd-mm-yyyy] [INFO] org.hibernate.Version HHH000412: Hibernate ORM core version 6.2.13.Final 
+2024-06-26 12:14:31,609[dd-mm-yyyy] [INFO] org.hibernate.cfg.Environment HHH000406: Using bytecode reflection optimizer 
+2024-06-26 12:14:32,032[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 12:14:32,074[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2024-06-26 12:14:32,344[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5302c084 
+2024-06-26 12:14:32,350[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2024-06-26 12:14:32,450[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 12:14:33,733[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 12:14:33,804[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:14:34,246[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 12:14:35,157[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25400cda, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@231772a2, org.springframework.security.web.context.SecurityContextHolderFilter@24b51d46, org.springframework.security.web.header.HeaderWriterFilter@5ba23299, org.springframework.security.web.authentication.logout.LogoutFilter@60a8e531, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@51cae36b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1422d31b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@348c1414, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d015399, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ba226e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1034238, org.springframework.security.web.access.ExceptionTranslationFilter@62a89e39, org.springframework.security.web.access.intercept.AuthorizationFilter@2ccbdab2] 
+2024-06-26 12:14:35,471[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 12:14:35,533[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 12:14:35,550[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 7.489 seconds (process running for 8.793) 
+2024-06-26 12:14:51,144[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-06-26 12:14:51,144[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2024-06-26 12:14:51,160[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 16 ms 
+2024-06-26 12:14:51,262[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 12:14:59,324[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:14:59,358[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:15:04,658[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 where b1_0.id=? 
+2024-06-26 12:15:04,691[dd-mm-yyyy] [DEBUG] org.hibernate.SQL delete from book where id=? 
+2024-06-26 12:15:04,709[dd-mm-yyyy] [WARN] com.bookstore.controllers.BookController  book is deleted successfully 
+2024-06-26 12:15:04,726[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:15:04,726[dd-mm-yyyy] [ERROR] com.bookstore.controllers.BookController No books are available.......com.bookstore.exception.BookNotFoundException: No books are available....... 
+2024-06-26 12:15:59,401[dd-mm-yyyy] [DEBUG] org.hibernate.SQL insert into book (author_name,book_name,price) values (?,?,?) 
+2024-06-26 12:15:59,434[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:15:59,434[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:16:16,457[dd-mm-yyyy] [DEBUG] org.hibernate.SQL insert into book (author_name,book_name,price) values (?,?,?) 
+2024-06-26 12:16:16,482[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:16:16,482[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:16:25,988[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 
+2024-06-26 12:16:25,997[dd-mm-yyyy] [INFO] com.bookstore.controllers.MyBooksController  My favourite Books are retrieved from database successfully 
+2024-06-26 12:16:33,970[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 where m1_0.id=? 
+2024-06-26 12:16:33,981[dd-mm-yyyy] [DEBUG] org.hibernate.SQL delete from my_books where id=? 
+2024-06-26 12:16:33,997[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 
+2024-06-26 12:16:33,997[dd-mm-yyyy] [INFO] com.bookstore.controllers.MyBooksController  My favourite Books are retrieved from database successfully 
+2024-06-26 12:16:41,097[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:16:41,104[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:16:56,724[dd-mm-yyyy] [DEBUG] org.hibernate.SQL insert into book (author_name,book_name,price) values (?,?,?) 
+2024-06-26 12:16:56,826[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:16:56,826[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:17:04,535[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 
+2024-06-26 12:17:04,542[dd-mm-yyyy] [INFO] com.bookstore.controllers.MyBooksController  My favourite Books are retrieved from database successfully 
+2024-06-26 12:17:08,096[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:17:08,107[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:17:11,728[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 where b1_0.id=? 
+2024-06-26 12:17:16,214[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 where b1_0.id=? 
+2024-06-26 12:17:16,230[dd-mm-yyyy] [DEBUG] org.hibernate.SQL update book set author_name=?,book_name=?,price=? where id=? 
+2024-06-26 12:17:16,249[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Maha prastanam   book is updated successfully 
+2024-06-26 12:17:16,249[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 12:17:16,249[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 12:17:23,179[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 12:17:24,490[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 12:17:49,041[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 12:18:03,416[dd-mm-yyyy] [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested. 
+2024-06-26 12:18:03,445[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 12:18:03,447[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2024-06-26 12:18:03,459[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 12:18:03,466[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2024-06-26 12:18:03,478[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2024-06-26 15:12:58,204[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 6424 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 15:12:58,210[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 15:12:58,307[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024-06-26 15:12:58,309[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024-06-26 15:12:59,634[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 15:12:59,755[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 105 ms. Found 2 JPA repository interfaces. 
+2024-06-26 15:13:00,812[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 15:13:00,828[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 15:13:00,828[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 15:13:00,946[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 15:13:00,947[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2637 ms 
+2024-06-26 15:13:01,198[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 15:13:01,285[dd-mm-yyyy] [INFO] org.hibernate.Version HHH000412: Hibernate ORM core version 6.2.13.Final 
+2024-06-26 15:13:01,289[dd-mm-yyyy] [INFO] org.hibernate.cfg.Environment HHH000406: Using bytecode reflection optimizer 
+2024-06-26 15:13:01,750[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 15:13:01,799[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2024-06-26 15:13:02,072[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31aebf2a 
+2024-06-26 15:13:02,078[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2024-06-26 15:13:02,172[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 15:13:03,467[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 15:13:03,556[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 15:13:04,046[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 15:13:04,631[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3eae65b8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1609d77f, org.springframework.security.web.context.SecurityContextHolderFilter@17f52ecc, org.springframework.security.web.header.HeaderWriterFilter@60db4049, org.springframework.security.web.authentication.logout.LogoutFilter@26b48ef0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e90da, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@48b5d78e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2595afe8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28a09c5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@776da8e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59b39c7, org.springframework.security.web.access.ExceptionTranslationFilter@11fc0af, org.springframework.security.web.access.intercept.AuthorizationFilter@40b25f27] 
+2024-06-26 15:13:05,190[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 15:13:05,254[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 15:13:05,277[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 7.843 seconds (process running for 9.6) 
+2024-06-26 15:13:39,485[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-26 15:13:39,549[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 15:13:39,583[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 15:13:39,591[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2024-06-26 15:13:39,612[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2024-06-26 15:13:39,731[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 6424 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 15:13:39,732[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 15:13:40,000[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 15:13:40,018[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces. 
+2024-06-26 15:13:40,175[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 15:13:40,176[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 15:13:40,176[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 15:13:40,206[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 15:13:40,207[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 470 ms 
+2024-06-26 15:13:40,259[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 15:13:40,271[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 15:13:40,273[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Starting... 
+2024-06-26 15:13:40,283[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75c092a7 
+2024-06-26 15:13:40,284[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Start completed. 
+2024-06-26 15:13:40,286[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 15:13:40,352[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 15:13:40,371[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 15:13:40,521[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 15:13:40,976[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a57ff60, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@345ea685, org.springframework.security.web.context.SecurityContextHolderFilter@1bfba54d, org.springframework.security.web.header.HeaderWriterFilter@3a932b08, org.springframework.security.web.authentication.logout.LogoutFilter@44036bd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@f27d5e7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@63be0d29, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3d466ac0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e31ff21, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4056a540, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@cff0862, org.springframework.security.web.access.ExceptionTranslationFilter@38face61, org.springframework.security.web.access.intercept.AuthorizationFilter@628d6385] 
+2024-06-26 15:13:41,182[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 15:13:41,215[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 15:13:41,230[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 1.534 seconds (process running for 45.553) 
+2024-06-26 15:13:41,235[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged 
+2024-06-26 15:13:52,236[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-06-26 15:13:52,237[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2024-06-26 15:13:52,240[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 3 ms 
+2024-06-26 15:14:06,024[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 15:14:19,923[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 15:14:19,959[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 15:14:23,365[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 
+2024-06-26 15:14:23,373[dd-mm-yyyy] [INFO] com.bookstore.controllers.MyBooksController  My favourite Books are retrieved from database successfully 
+2024-06-26 15:14:29,154[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 15:14:30,687[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 15:14:35,544[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 15:14:35,552[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 15:14:38,377[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 where b1_0.id=? 
+2024-06-26 15:14:41,185[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 15:14:41,194[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 15:14:47,141[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 
+2024-06-26 15:14:47,147[dd-mm-yyyy] [INFO] com.bookstore.controllers.MyBooksController  My favourite Books are retrieved from database successfully 
+2024-06-26 15:15:25,359[dd-mm-yyyy] [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested. 
+2024-06-26 15:15:25,382[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 15:15:25,383[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2024-06-26 15:15:25,392[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 15:15:25,393[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown initiated... 
+2024-06-26 15:15:25,401[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown completed. 
+2024-06-26 16:02:55,599[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 18688 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 16:02:55,605[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 16:02:55,742[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024-06-26 16:02:55,743[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024-06-26 16:02:57,386[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 16:02:57,514[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 112 ms. Found 2 JPA repository interfaces. 
+2024-06-26 16:02:59,268[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 16:02:59,294[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 16:02:59,295[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 16:02:59,548[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 16:02:59,558[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 3813 ms 
+2024-06-26 16:02:59,977[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 16:03:00,295[dd-mm-yyyy] [INFO] org.hibernate.Version HHH000412: Hibernate ORM core version 6.2.13.Final 
+2024-06-26 16:03:00,303[dd-mm-yyyy] [INFO] org.hibernate.cfg.Environment HHH000406: Using bytecode reflection optimizer 
+2024-06-26 16:03:01,067[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 16:03:01,133[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2024-06-26 16:03:01,524[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31aebf2a 
+2024-06-26 16:03:01,528[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2024-06-26 16:03:01,657[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 16:03:04,335[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 16:03:04,446[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 16:03:05,106[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 16:03:05,741[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3eae65b8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1609d77f, org.springframework.security.web.context.SecurityContextHolderFilter@17f52ecc, org.springframework.security.web.header.HeaderWriterFilter@60db4049, org.springframework.security.web.authentication.logout.LogoutFilter@26b48ef0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e90da, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@48b5d78e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2595afe8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28a09c5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@776da8e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59b39c7, org.springframework.security.web.access.ExceptionTranslationFilter@11fc0af, org.springframework.security.web.access.intercept.AuthorizationFilter@40b25f27] 
+2024-06-26 16:03:06,577[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 16:03:06,670[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 16:03:06,696[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 12.064 seconds (process running for 14.582) 
+2024-06-26 16:03:45,339[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-06-26 16:03:45,339[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2024-06-26 16:03:45,345[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 6 ms 
+2024-06-26 16:04:08,310[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController successfully home page initialized 
+2024-06-26 16:04:50,713[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 16:04:50,754[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 16:05:01,744[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 where b1_0.id=? 
+2024-06-26 16:05:01,764[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 where m1_0.id=? 
+2024-06-26 16:05:01,817[dd-mm-yyyy] [DEBUG] org.hibernate.SQL insert into my_books (author_name,book_name,price) values (?,?,?) 
+2024-06-26 16:05:01,910[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 
+2024-06-26 16:05:01,915[dd-mm-yyyy] [INFO] com.bookstore.controllers.MyBooksController  My favourite Books are retrieved from database successfully 
+2024-06-26 16:05:05,453[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 
+2024-06-26 16:05:05,461[dd-mm-yyyy] [INFO] com.bookstore.controllers.MyBooksController  My favourite Books are retrieved from database successfully 
+2024-06-26 16:05:17,160[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 where m1_0.id=? 
+2024-06-26 16:05:17,195[dd-mm-yyyy] [DEBUG] org.hibernate.SQL delete from my_books where id=? 
+2024-06-26 16:05:17,221[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select m1_0.id,m1_0.author_name,m1_0.book_name,m1_0.price from my_books m1_0 
+2024-06-26 16:05:17,227[dd-mm-yyyy] [INFO] com.bookstore.controllers.MyBooksController  My favourite Books are retrieved from database successfully 
+2024-06-26 16:08:40,361[dd-mm-yyyy] [DEBUG] org.hibernate.SQL select b1_0.id,b1_0.author_name,b1_0.book_name,b1_0.price from book b1_0 
+2024-06-26 16:08:40,371[dd-mm-yyyy] [INFO] com.bookstore.controllers.BookController Books are retrieved from database successfully 
+2024-06-26 16:13:43,461[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-26 16:13:43,499[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 16:13:43,501[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2024-06-26 16:13:43,591[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 16:13:43,613[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2024-06-26 16:13:43,778[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2024-06-26 16:13:44,114[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 18688 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 16:13:44,117[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 16:13:44,700[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 16:13:44,732[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces. 
+2024-06-26 16:13:45,018[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 16:13:45,020[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 16:13:45,021[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 16:13:45,069[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 16:13:45,072[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 939 ms 
+2024-06-26 16:13:45,205[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 16:13:45,219[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 16:13:45,223[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Starting... 
+2024-06-26 16:13:45,238[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24547c26 
+2024-06-26 16:13:45,239[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Start completed. 
+2024-06-26 16:13:45,242[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 16:13:45,352[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 16:13:45,379[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 16:13:45,617[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 16:13:46,075[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@376ca3e6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d086a24, org.springframework.security.web.context.SecurityContextHolderFilter@497b4e21, org.springframework.security.web.header.HeaderWriterFilter@7a4f8303, org.springframework.security.web.authentication.logout.LogoutFilter@564844cb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@f7e9ddb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2551460a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@15305553, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73769c26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23808ee2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e5b926b, org.springframework.security.web.access.ExceptionTranslationFilter@41722a80, org.springframework.security.web.access.intercept.AuthorizationFilter@5e50d600] 
+2024-06-26 16:13:46,381[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 16:13:46,421[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 16:13:46,431[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 2.48 seconds (process running for 654.317) 
+2024-06-26 16:13:46,435[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged 
+2024-06-26 16:14:18,354[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications) 
+2024-06-26 16:14:18,474[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 16:14:18,512[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 16:14:18,514[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown initiated... 
+2024-06-26 16:14:18,538[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown completed. 
+2024-06-26 16:14:19,234[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 18688 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 16:14:19,243[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 16:14:19,926[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 16:14:19,958[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces. 
+2024-06-26 16:14:20,219[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 16:14:20,220[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 16:14:20,221[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 16:14:20,264[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 16:14:20,264[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 974 ms 
+2024-06-26 16:14:20,362[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 16:14:20,375[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 16:14:20,378[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Starting... 
+2024-06-26 16:14:20,394[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fdff2aa 
+2024-06-26 16:14:20,395[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Start completed. 
+2024-06-26 16:14:20,398[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 16:14:20,507[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 16:14:20,540[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 16:14:21,042[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 16:14:21,477[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@11c6c44d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73c25c52, org.springframework.security.web.context.SecurityContextHolderFilter@5d2e805a, org.springframework.security.web.header.HeaderWriterFilter@30cdcb18, org.springframework.security.web.authentication.logout.LogoutFilter@5124bc91, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65722c46, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@559c2fc7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@125aee9c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f405a06, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bd7a0ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@663ef08d, org.springframework.security.web.access.ExceptionTranslationFilter@3953bc1c, org.springframework.security.web.access.intercept.AuthorizationFilter@53964de3] 
+2024-06-26 16:14:21,723[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 16:14:21,759[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 16:14:21,777[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 2.89 seconds (process running for 689.663) 
+2024-06-26 16:14:21,782[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged 
+2024-06-26 16:28:18,579[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-06-26 16:28:18,580[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet' 
+2024-06-26 16:28:18,584[dd-mm-yyyy] [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 4 ms 
+2024-06-26 17:04:48,878[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-26 17:04:48,900[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 17:04:48,901[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2024-06-26 17:04:48,908[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 17:04:48,911[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Shutdown initiated... 
+2024-06-26 17:04:48,917[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Shutdown completed. 
+2024-06-26 17:04:49,036[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 18688 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 17:04:49,036[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 17:04:49,376[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 17:04:49,393[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces. 
+2024-06-26 17:04:49,585[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 17:04:49,586[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 17:04:49,587[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 17:04:49,617[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 17:04:49,618[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 577 ms 
+2024-06-26 17:04:49,674[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 17:04:49,686[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 17:04:49,688[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Starting... 
+2024-06-26 17:04:49,695[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5eed63d2 
+2024-06-26 17:04:49,696[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Start completed. 
+2024-06-26 17:04:49,699[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 17:04:49,747[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 17:04:49,765[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 17:04:49,918[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 17:04:50,332[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e8a08fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b4d8fc, org.springframework.security.web.context.SecurityContextHolderFilter@ea5a2b0, org.springframework.security.web.header.HeaderWriterFilter@7d169a9b, org.springframework.security.web.authentication.logout.LogoutFilter@1cdbd1c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e795033, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2c0c589d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@73a34fb2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f10fce9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6507d4e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7af713d, org.springframework.security.web.access.ExceptionTranslationFilter@7e1a84f3, org.springframework.security.web.access.intercept.AuthorizationFilter@3e39abab] 
+2024-06-26 17:04:50,660[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 17:04:50,704[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 17:04:50,719[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 1.725 seconds (process running for 3718.605) 
+2024-06-26 17:04:50,725[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged 
+2024-06-26 17:05:00,417[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-26 17:05:00,442[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 17:05:00,450[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 17:05:00,452[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Shutdown initiated... 
+2024-06-26 17:05:00,460[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Shutdown completed. 
+2024-06-26 17:05:00,580[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Starting BookStoreApplication using Java 17.0.10 with PID 18688 (E:\java\BookStore\target\classes started by Raviteja Yanapu in E:\java\BookStore) 
+2024-06-26 17:05:00,580[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication No active profile set, falling back to 1 default profile: "default" 
+2024-06-26 17:05:00,843[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-06-26 17:05:00,858[dd-mm-yyyy] [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces. 
+2024-06-26 17:05:00,989[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8084 (http) 
+2024-06-26 17:05:00,990[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat] 
+2024-06-26 17:05:00,990[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2024-06-26 17:05:01,027[dd-mm-yyyy] [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext 
+2024-06-26 17:05:01,027[dd-mm-yyyy] [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 444 ms 
+2024-06-26 17:05:01,079[dd-mm-yyyy] [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-06-26 17:05:01,088[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-06-26 17:05:01,088[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-5 - Starting... 
+2024-06-26 17:05:01,093[dd-mm-yyyy] [INFO] com.zaxxer.hikari.pool.HikariPool HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@713af4f0 
+2024-06-26 17:05:01,094[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-5 - Start completed. 
+2024-06-26 17:05:01,096[dd-mm-yyyy] [WARN] org.hibernate.orm.deprecation HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-06-26 17:05:01,136[dd-mm-yyyy] [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-06-26 17:05:01,146[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 17:05:01,270[dd-mm-yyyy] [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-06-26 17:05:01,717[dd-mm-yyyy] [INFO] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44c557ca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6217f418, org.springframework.security.web.context.SecurityContextHolderFilter@79b09b69, org.springframework.security.web.header.HeaderWriterFilter@7cd73820, org.springframework.security.web.authentication.logout.LogoutFilter@33fb59fd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d18c725, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4b582203, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5dea1bfe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d03c1a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e0b1dda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36a0de89, org.springframework.security.web.access.ExceptionTranslationFilter@2b5430ba, org.springframework.security.web.access.intercept.AuthorizationFilter@6f8a1915] 
+2024-06-26 17:05:01,838[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729 
+2024-06-26 17:05:01,865[dd-mm-yyyy] [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8084 (http) with context path '' 
+2024-06-26 17:05:01,878[dd-mm-yyyy] [INFO] com.bookstore.BookStoreApplication Started BookStoreApplication in 1.336 seconds (process running for 3729.764) 
+2024-06-26 17:05:01,881[dd-mm-yyyy] [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged 
+2024-06-26 17:05:11,698[dd-mm-yyyy] [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested. 
+2024-06-26 17:05:11,716[dd-mm-yyyy] [INFO] org.apache.catalina.core.StandardService Stopping service [Tomcat] 
+2024-06-26 17:05:11,725[dd-mm-yyyy] [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-06-26 17:05:11,726[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-5 - Shutdown initiated... 
+2024-06-26 17:05:11,735[dd-mm-yyyy] [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-5 - Shutdown completed. 

@@ -1,22 +1,29 @@
-package com.bookstore.serviceImpl;
+package com.bookstore.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bookstore.entities.Book;
+import com.bookstore.entitiy.Book;
+import com.bookstore.exception.BookNotFoundException;
 import com.bookstore.repositories.BookRepository;
-import com.bookstore.services.BookService;
 @Service
 public class BookServiceImpl implements BookService {
 	@Autowired
 	private BookRepository bookRepo;
 	
 	@Override
-	public List<Book> showBookList() {
+	public List<Book> showBookList() throws BookNotFoundException{
 		
-		return bookRepo.findAll();
+		List<Book>list=bookRepo.findAll();
+		if(list.isEmpty()) {
+			 
+			throw new BookNotFoundException("No books are available.......");
+		}
+		
+		return list;
 	}
 	@Override
 	public Book saveBook(Book book) {
@@ -42,9 +49,11 @@ public class BookServiceImpl implements BookService {
 		return bookRepo.save(book);
 	}
 	@Override
-	public void deleteBook(Long id) {
+	public void deleteBook(Long id){
+		
 		bookRepo.deleteById(id);
 		
 	}
+
 
 }

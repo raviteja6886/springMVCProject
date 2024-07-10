@@ -1,4 +1,4 @@
-package com.bookstore.entities;
+package com.bookstore.entitiy;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,6 +13,7 @@ public class Book {
 	private String bookName;
 	private String authorName;
 	private String price;
+	
 	public Book(String bookName, String authorName, String price) {
 		super();
 		this.bookName = bookName;

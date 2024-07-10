@@ -11,7 +11,7 @@
 
 <body>
 	<div th:fragment="nav">
-		<nav class="navbar navbar-expand-sm navbar-dark bg-dark stick-bottom">
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 			<div class="container-fluid">
 				<a class="navbar-brand" th:href="@{/home}">
 					<img src="/images/kids.png" style="width:60px;height:60px;" class="rounded-pill"> Book Store</a>
@@ -24,7 +24,10 @@
 						<a class="nav-link p-3 text-white" th:href="@{/booksList/new}">Register book</a>
 					</div>
 					<div class="nav-item">
-						<a class="nav-link p-3 text-white" th:href="@{/myBooks}">MyBooks</a>
+						<a class="nav-link p-3 text-white" th:href="@{/myBooks}">My Favourite Books</a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link p-3 text-white" th:href="@{/logout}">logout</a>
 					</div>
 				</div>
 			</div>

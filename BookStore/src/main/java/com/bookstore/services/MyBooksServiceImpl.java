@@ -1,15 +1,15 @@
-package com.bookstore.serviceImpl;
+package com.bookstore.services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bookstore.entities.Book;
-import com.bookstore.entities.MyBooks;
+import com.bookstore.entitiy.Book;
+import com.bookstore.entitiy.MyBooks;
+import com.bookstore.exception.BookNotFoundException;
 import com.bookstore.repositories.BookRepository;
 import com.bookstore.repositories.MyBooksRepository;
-import com.bookstore.services.MyBooksService;
 
 @Service
 public class MyBooksServiceImpl implements MyBooksService {
@@ -32,18 +32,20 @@ public class MyBooksServiceImpl implements MyBooksService {
 	}
 
 	@Override
-	public List<MyBooks> getMyBooks() {
+	public List<MyBooks> getMyBooks() throws BookNotFoundException {
 		
-		return myBooksRepo.findAll();
+		List<MyBooks>myBooksList=myBooksRepo.findAll();
+		if(myBooksList.isEmpty()) {
+			throw new BookNotFoundException("No books are available");
+		}
+		return myBooksList;
 	}
 
 	@Override
 	public void deleteMyBook(Long id) {
 		
 		
-		MyBooks book=myBooksRepo.findById(id).get();
-		
-		myBooksRepo.deleteById(book.getId());
+		myBooksRepo.deleteById(id);
 		
 	}
 }
